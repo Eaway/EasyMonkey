@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".StartActivity" >
+
+    <TextView
+        android:id="@+id/textViewEventCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextEventCount"
+        android:layout_alignBottom="@+id/editTextEventCount"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:text="@string/event_count" />
+
+    <EditText
+        android:id="@+id/editTextEventCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/textViewThrottle"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="10000" />
+
+    <TextView
+        android:id="@+id/textViewThrottle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textViewEventCount"
+        android:layout_marginLeft="14dp"
+        android:text="@string/throttle" />
+
+    <EditText
+        android:id="@+id/editTextThrottle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewThrottle"
+        android:layout_alignBottom="@+id/textViewThrottle"
+        android:layout_alignLeft="@+id/editTextEventCount"
+        android:layout_alignRight="@+id/editTextEventCount"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0" />
+
+    <CheckBox
+        android:id="@+id/checkBoxIgnoreCrashes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewThrottle"
+        android:text="@string/ignore_crashes" />
+
+    <CheckBox
+        android:id="@+id/checkBoxIgnoreTimeouts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/checkBoxIgnoreCrashes"
+        android:text="@string/ignore_timeouts" />
+
+    <CheckBox
+        android:id="@+id/checkBoxKillProcess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/checkBoxIgnoreTimeouts"
+        android:text="@string/kill_process" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onStartButtonClick"
+        android:text="@string/start" />
+
+</RelativeLayout>

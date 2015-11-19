@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EasyMonkey</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+    <string name="author">\neaway.lu@tpv-tech.com</string>
+    <string name="app_icon_description">Application Icon</string>
+    <string name="sort_by">Sort by</string>
+    <string name="sort_by_name">Name</string>
+    <string name="sort_by_package">Package</string>
+    <string name="hide">Hide packages</string>
+    <string name="hide_google">Google</string>
+    <string name="hide_android">Android</string>
+    <string name="select_all">Select All</string>
+    <string name="clear_all">Clear All</string>
+    <string name="next">Next</string>
+    <string name="start">Start</string>
+    <string name="title_activity_monkey">Monkey Settings</string>
+    <string name="event_count">Event count</string>
+    <string name="throttle">Throttle (ms)</string>
+    <string name="ignore_crashes">--ignore-crashes</string>
+    <string name="ignore_timeouts">--ignore-timeouts</string>
+    <string name="kill_process">--kill-process-after-error</string>
+</resources>
